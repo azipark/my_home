@@ -26,7 +26,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
               <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
-                <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">
+                <CardHeader>
                   <img
                   src={project.image}
                   alt={`${project.title} preview`}
@@ -41,7 +41,7 @@ export default function ProjectsSection() {
                     {project.description.map((desc, i) => (
                       <motion.li
                         key={i}
-                        className="text-muted-foreground"
+                        className="text-muted-foreground bg-transparent hover:bg-muted/10 transition-colors duration-300 rounded-md px-2 py-1"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: i * 0.1 }}
@@ -52,12 +52,12 @@ export default function ProjectsSection() {
                     ))}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30 bg-gradient-to-r from-purple-500/5 to-pink-500/5">
+                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30">
                   <motion.a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-8"
+                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

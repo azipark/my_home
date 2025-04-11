@@ -37,7 +37,7 @@ export default function AwardsSection() {
                     {award.issuer}
                   </p>
                   <motion.span
-                    className="text-sm text-muted-foreground/80 bg-background/50 px-2 py-1 pl-8 rounded-md w-fit text-white"
+                    className="text-sm text-muted-foreground/80 bg-background/50 px-2 py-1 pl-8 rounded-md w-fit"
                     whileHover={{ scale: 1.05 }}
                   >
                     {award.type}

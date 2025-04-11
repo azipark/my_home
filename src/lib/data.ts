@@ -97,7 +97,7 @@ export const skills = {
     "JavaScript",
   ],
   frontendDevelopment: [
-    "Reactjs",
+    "React",
     "VueJS",
     "Tailwind CSS",
     "SCSS/Sass",
