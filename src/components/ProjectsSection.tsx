@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-12 relative">
+    <section id="projects" className="py-12 scroll-mt-24 relative">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
                     ))}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex justify-center md:justify-start items-center border-t border-border/30">
+                <CardFooter className="flex justify-center items-center border-t border-border/30">
                   <motion.a
                     href={project.url}
                     target="_blank"
@@ -61,8 +61,7 @@ export default function ProjectsSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <p className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
-                    VIEW PAGE 🔗
+                    VIEW PAGE
                   </motion.a>
                 </CardFooter>
               </GlassCard>

@@ -100,7 +100,7 @@ export const skills = {
     "React",
     "VueJS",
     "Tailwind CSS",
-    "SCSS/Sass",
+    "SCSS/SASS",
     "CSS",
     "Bootstrap",
     "WebSquare5",
