@@ -28,18 +28,18 @@ export default function TimelineItem({
       viewport={{ once: true, margin: "-50px" }}
     >
       <div className="flex flex-col items-center">
-        <motion.div
-          className="flex h-[18px] w-[18px] rounded-full bg-transparant border border-purple-500/60 dark:border-purple-400/40 z-10"
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 15,
-            delay: index * 0.2 + 0.2,
-          }}
-          viewport={{ once: true, margin: "-50px" }}
-        />
+      <motion.div
+        className="flex h-[18px] w-[18px] md:h-[18px] md:w-[18px] rounded-full bg-transparant border border-purple-500/60 dark:border-purple-400/40 z-20"
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 15,
+          delay: index * 0.2 + 0.2,
+        }}
+        viewport={{ once: true, amount: 0.1 }}
+      />
         {!isLast && (
           <motion.div
             className="w-px grow bg-gradient-to-b from-purple-500/50 to-pink-500/30 dark:from-purple-500/30 dark:to-pink-500/10"
