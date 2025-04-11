@@ -41,7 +41,7 @@ export default function ProjectsSection() {
                     {project.description.map((desc, i) => (
                       <motion.li
                         key={i}
-                        className="text-muted-foreground bg-transparent hover:bg-muted/10 transition-colors duration-300 rounded-md px-2 py-1"
+                        className="text-muted-foreground text-center md:text-left bg-transparent hover:bg-muted/10 transition-colors duration-300 rounded-md px-2 py-1"
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ delay: i * 0.1 }}
