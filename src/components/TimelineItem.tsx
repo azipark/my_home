@@ -29,7 +29,7 @@ export default function TimelineItem({
     >
       <div className="flex flex-col items-center">
         <motion.div
-          className="flex h-[18px] w-[18px] rounded-full border border-purple-500/50 bg-background dark:bg-muted z-10"
+          className="flex h-[18px] w-[18px] rounded-full border border-purple-500/50 bg-transparent z-10"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{
