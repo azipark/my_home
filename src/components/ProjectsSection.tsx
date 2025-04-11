@@ -27,6 +27,11 @@ export default function ProjectsSection() {
             <MotionWrapper key={project.title} delay={index * 0.2}>
               <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
                 <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">
+                  <img
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  className="w-full h-48 object-cover rounded-md mb-4"
+                />
                   <CardTitle className="text-center md:text-left group-hover:text-purple-500 transition-colors duration-300">
                     {project.title}
                   </CardTitle>

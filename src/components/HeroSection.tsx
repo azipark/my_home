@@ -2,6 +2,7 @@ import { personalInfo } from "@/lib/data";
 import { Mail, Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { style } from "framer-motion/client";
 
 export default function HeroSection() {
   const containerVariants = {
@@ -48,7 +49,7 @@ export default function HeroSection() {
               className="text-xl text-muted-foreground mb-6"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
+              UI Developer
             </motion.p>
 
             <motion.div
@@ -61,7 +62,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <MapPin className="h-4 w-4 mr-2" />
-                📍 {personalInfo.location}
+                {personalInfo.location}
               </motion.div>
 
               <motion.a
@@ -71,7 +72,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
+                {personalInfo.email}
               </motion.a>
 
               <motion.a
@@ -83,7 +84,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Github className="h-4 w-4 mr-2" />
-                🌟 GitHub
+                GitHub
               </motion.a>
             </motion.div>
           </div>
@@ -97,9 +98,9 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="/profile.jpg"
+                src="/images/profile.JPG"
                 alt="Profile"
-                className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
+                className="max-w-[120px] w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
                 style={{ objectFit: "cover" }}
               />
             </div>
@@ -110,15 +111,12 @@ export default function HeroSection() {
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              🚀 Passionate software engineer with a versatile skill set
-              spanning multiple domains. I thrive on solving complex challenges
-              across different platforms and environments, adapting quickly to
-              new technologies and methodologies. My holistic approach combines
-              technical expertise with creative problem-solving, allowing me to
-              develop solutions that are both innovative and practical. I'm
-              driven by continuous learning and a commitment to excellence,
-              whether working independently or collaborating with diverse teams
-              to create impactful, scalable solutions.
+              &#46; <b>React, VueJS</b> 등 모던 프론트엔드 프레임워크에 대한 경험이 있습니다.<br/>
+              &#46; <b>PC, Mobile, 웹뷰 기반의 하이브리드 앱</b> 전체를 지원하는 서비스 운영 경험이 있습니다.<br/>
+              &#46; <b>웹 표준 준수, 크로스브라우징, 웹접근성</b>을 고려하여 작업합니다.<br/>
+              &#46; <b>Figma, Zeplin, Sketch, AdobeXD, AdobePhotoshop</b> 등을 통한 디자이너와의 협업 경험이 있습니다.<br/>
+              &#46; <b>Git, SVN, ChangeFlow, BXM, Jira, Slack, Confluence</b> 등 다양한 협업 도구 사용 경험이 있습니다.<br/>
+              &#46; 함꼐 일하는 동료들과의 소통과 신뢰를 중요하게 여기며, 유연한 협업 환경 조성을 지향합니다.
             </p>
           </div>
         </MotionWrapper>

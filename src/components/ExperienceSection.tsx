@@ -42,7 +42,7 @@ export default function ExperienceSection() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <ul className="list-disc space-y-2 text-sm">
+                <ul className="list-none space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
                     <motion.li
                       key={i}
