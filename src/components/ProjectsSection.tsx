@@ -32,7 +32,7 @@ export default function ProjectsSection() {
                   alt={`${project.title} preview`}
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
-                  <CardTitle className="text-center md:text-left group-hover:text-purple-500 transition-colors duration-300">
+                  <CardTitle className="text-center md:text-left font-semibold group-hover:text-purple-500 transition-colors duration-300">
                     {project.title}
                   </CardTitle>
                 </CardHeader>

@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Hyeyeon Kelly",
   location: "Seoul, Republic of KOREA",
   email: "azipark7721@gmail.com",
-  github: "https://github.com/azipark7721",
+  github: "https://github.com/azipark",
 };
 
 export const workExperience = [
@@ -12,11 +12,11 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.09 - 재직중",
     achievements: [
-      "OK저축은행 앱 서비스 운영",
-      "OK비교대출, OKpay 앱 및 웹 서비스 운영(담당 퍼블리셔)",
-      "OK캐피탈, OK금융그룹 리뉴얼 작업 총괄",
-      "OK금융그룹 앱 및 웹 서비스 UX 개선 작업",
-      "AI TF로써 외부LLM플랫폼 구축 프로젝트 참여",
+      "· OK저축은행 앱 서비스 운영",
+      "· OK비교대출, OKpay 앱 및 웹 서비스 운영(담당 퍼블리셔)",
+      "· OK캐피탈, OK금융그룹 리뉴얼 작업 총괄",
+      "· OK금융그룹 앱 및 웹 서비스 UX 개선 작업",
+      "· AI TF로써 외부LLM플랫폼 구축 프로젝트 참여",
     ],
   },
   {
@@ -25,7 +25,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.04 - 2023.08",
     achievements: [
-      "게임 관리자 페이지 화면 UI개발",
+      "· 게임 관리자 페이지 화면 UI개발",
     ],
   },
   {
@@ -34,7 +34,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.06",
     achievements: [
-      "신규 서비스 웹페이지(PC/MO) UI개발",
+      "· 신규 서비스 웹페이지(PC/MO) UI개발",
     ],
   },
   {
@@ -43,10 +43,10 @@ export const workExperience = [
     position: "UI개발",
     period: "2021.06 - 2023.04",
     achievements: [
-      "국내외 자사 웹서비스 운영, 구축 및 리뉴얼, 이벤트페이지 작업",
-      "자사 신규게임 관련 서비스 UI개발(관리자페이지, CBT페이지, 사전예약페이지, 공식홈페이지 등)",
-      "NFT 등의 신규 사업 웹페이지, 이벤트페이지(PC/MO) 작업",
-      "BI 플랫폼 화면 개발 및 유지/보수",
+      "· 국내외 자사 웹서비스 운영, 구축 및 리뉴얼, 이벤트페이지 작업",
+      "· 자사 신규게임 관련 서비스 UI개발(관리자페이지, CBT페이지, 사전예약페이지, 공식홈페이지 등)",
+      "· NFT 등의 신규 사업 웹페이지, 이벤트페이지(PC/MO) 작업",
+      "· BI 플랫폼 화면 개발 및 유지/보수",
     ],
   },
   {
@@ -55,8 +55,8 @@ export const workExperience = [
     position: "UI개발",
     period: "2020.11 - 2021.02",
     achievements: [
-      "카카오페이지, 카카오하모니 등 카카오 서비스 페이지 UI개발 참여",
-      "자사 홈페이지(PC/MO) 리뉴얼 작업",
+      "· 카카오페이지, 카카오하모니 등 카카오 서비스 페이지 UI개발 참여",
+      "· 자사 홈페이지(PC/MO) 리뉴얼 작업",
     ],
   },
   {
@@ -65,17 +65,8 @@ export const workExperience = [
     position: "UI개발",
     period: "2019.02 - 2020.03",
     achievements: [
-      "e커머스 플랫폼(11번가)의 프로모션 페이지(PC/MO) 제작",
-      "eBay 판매자 통합 관리페이지 운영",
-    ],
-  },
-  {
-    company: "넥슨(Nexon)",
-    location: "경기도 성남시",
-    position: "UI개발",
-    period: "2018.07 - 2018.10",
-    achievements: [
-      "FIFA ONLINE 4(현 FC Online) 홈페이지 내 이벤트페이지 제작 및 서비스 운영",
+      "· e커머스 플랫폼(11번가)의 프로모션 페이지(PC/MO) 제작",
+      "· eBay 판매자 통합 관리페이지 운영",
     ],
   },
 ];
@@ -84,7 +75,7 @@ export const education = [
   {
     institution: "고려대학교 공학대학원 전기전자컴퓨터공학",
     location: "서울 성북구",
-    period: "2022.08 - 2025.02(졸업예정)",
+    period: "2022.08 - 2026.02(졸업예정)",
   },
   {
     institution: "강남대학교 세무학전공/경영학부전공",
@@ -117,11 +108,23 @@ export const skills = {
 
 export const projects = [
   {
+    title: "포트폴리오",
+    url: "https://m.okbigyo.com/",
+    image: "/images/projects_03.png",
+    description: [
+      "· Framework: Astro",
+      "· Front-end: React, TypeScript",
+      "· Styling: Tailwind CSS",
+      "· Deployment: Vercel"
+    ],
+  },
+  {
     title: "OK비교대출 웹앱",
     url: "https://m.okbigyo.com/",
     image: "/images/projects_01.png",
     description: [
-      "Front-end : VueJS, HTML, CSS, SCSS/Sass",
+      "· Front-end: VueJS",
+      "· Styling : CSS, SCSS/Sass",
     ],
   },
   {
@@ -129,7 +132,8 @@ export const projects = [
     url: "https://sea.sealm.com/en",
     image: "/images/projects_02.png",
     description: [
-      "Front-end : HTML, CSS, Javascript, jQuery",
+      "· Front-end: HTML, Javascript, jQuery",
+      "· Styling : CSS",
     ],
   },
 ];

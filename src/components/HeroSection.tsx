@@ -88,35 +88,18 @@ export default function HeroSection() {
               </motion.a>
             </motion.div>
           </div>
-
-          <motion.div
-            className="mt-6 md:mt-0 flex justify-center"
-            variants={childVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-br from-purple-400/40 to-pink-400/30 rounded-xl blur-sm opacity-0 group-hover:opacity-80 transition-all duration-500 ease-out"></div>
-              <img
-                src="/images/profile.JPG"
-                alt="Profile"
-                className="max-w-[120px] w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-          </motion.div>
         </motion.div>
 
         <MotionWrapper>
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
-            <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
+            <p className="text-muted-foreground pl-4 py-2 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              &#46; <b>React, VueJS</b> 등 모던 프론트엔드 프레임워크에 대한 경험이 있습니다.<br/>
-              &#46; <b>PC, Mobile, 웹뷰 기반의 하이브리드 앱</b> 전체를 지원하는 서비스 운영 경험이 있습니다.<br/>
-              &#46; <b>웹 표준 준수, 크로스브라우징, 웹접근성</b>을 고려하여 작업합니다.<br/>
-              &#46; <b>Figma, Zeplin, Sketch, AdobeXD, AdobePhotoshop</b> 등을 통한 디자이너와의 협업 경험이 있습니다.<br/>
-              &#46; <b>Git, SVN, ChangeFlow, BXM, Jira, Slack, Confluence</b> 등 다양한 협업 도구 사용 경험이 있습니다.<br/>
-              &#46; 함꼐 일하는 동료들과의 소통과 신뢰를 중요하게 여기며, 유연한 협업 환경 조성을 지향합니다.
+              &#183; <b>React, VueJS</b> 등 모던 프론트엔드 프레임워크에 대한 경험이 있습니다.<br/>
+              &#183; <b>PC, Mobile, 웹뷰 기반의 하이브리드 앱</b> 전체를 지원하는 서비스 운영 경험이 있습니다.<br/>
+              &#183; <b>웹 표준 준수, 크로스브라우징, 웹접근성</b>을 고려하여 작업합니다.<br/>
+              &#183; <b>Figma, Zeplin, Sketch, AdobeXD, AdobePhotoshop</b> 등을 통한 디자이너와의 협업 경험이 있습니다.<br/>
+              &#183; <b>Git, SVN, ChangeFlow, BXM, Jira, Slack, Confluence</b> 등 다양한 협업 도구 사용 경험이 있습니다.<br/>
+              &#183; 함께 일하는 동료들과의 소통과 신뢰를 중요하게 여기며, 유연한 협업 환경 조성을 지향합니다.
             </p>
           </div>
         </MotionWrapper>
