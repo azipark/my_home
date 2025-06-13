@@ -32,12 +32,12 @@ export default function ProjectsSection() {
                   alt={`${project.title} preview`}
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
-                  <CardTitle className="text-center md:text-left font-semibold group-hover:text-purple-500 transition-colors duration-300">
+                  <CardTitle className="text-center md:text-left font-semibold transition-colors duration-300">
                     {project.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <ul className="list-none ml-4 space-y-1 text-sm group-hover:space-y-2 transition-all duration-300">
+                  <ul className="list-none ml-4 space-y-1 text-sm transition-all duration-300">
                     {project.description.map((desc, i) => (
                       <motion.li
                         key={i}
@@ -58,7 +58,6 @@ export default function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4"
-                    whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     VIEW PAGE
