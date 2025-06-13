@@ -44,16 +44,23 @@ export default function ExperienceSection() {
               >
                 <ul className="list-none space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
-                    <motion.li
-                      key={i}
-                      className="text-muted-foreground relative pl-1"
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: 0.1 * i }}
-                      viewport={{ once: true }}
-                    >
-                      {achievement}
-                    </motion.li>
+                    <li key={i} className="mb-2">
+                      <div className="font-semibold text-foreground dark:text-white mb-1">{achievement.topic}</div>
+                      <ul className="list-disc ml-5 space-y-1">
+                        {achievement.details.map((detail: string, j: number) => (
+                          <motion.li
+                            key={j}
+                            className="text-muted-foreground relative pl-1"
+                            initial={{ opacity: 0, x: -10 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.3, delay: 0.1 * j }}
+                            viewport={{ once: true }}
+                          >
+                            {detail}
+                          </motion.li>
+                        ))}
+                      </ul>
+                    </li>
                   ))}
                 </ul>
               </motion.div>
