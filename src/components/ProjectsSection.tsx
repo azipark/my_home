@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "@/lib/data";
 import {
   CardContent,
@@ -11,8 +11,25 @@ import { Github } from "lucide-react";
 import { GlassCard } from "./ui/glass-card";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
+import ProjectModal from "./ProjectModal";
+
+// projects 배열 요소 타입 추론
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type ProjectType = typeof projects[number];
 
 export default function ProjectsSection() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
+
+  const handleOpenModal = (project: ProjectType) => {
+    setSelectedProject(project);
+    setModalOpen(true);
+  };
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <section id="projects" className="py-12 scroll-mt-24 relative">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -53,20 +70,19 @@ export default function ProjectsSection() {
                   </ul>
                 </CardContent>
                 <CardFooter className="flex justify-center items-center border-t border-border/30">
-                  <motion.a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4"
-                    whileTap={{ scale: 0.95 }}
+                  <button
+                    type="button"
+                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4 focus:outline-none"
+                    onClick={() => handleOpenModal(project)}
                   >
                     VIEW PAGE
-                  </motion.a>
+                  </button>
                 </CardFooter>
               </GlassCard>
             </MotionWrapper>
           ))}
         </div>
+        <ProjectModal open={modalOpen} onClose={handleCloseModal} project={selectedProject} />
       </div>
     </section>
   );
