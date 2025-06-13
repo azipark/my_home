@@ -12,11 +12,11 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.09 - 재직중",
     achievements: [
-      "· OK저축은행 앱 서비스 운영",
-      "· OK비교대출, OKpay 앱 및 웹 서비스 운영(담당 퍼블리셔)",
-      "· OK캐피탈, OK금융그룹 리뉴얼 작업 총괄",
-      "· OK금융그룹 앱 및 웹 서비스 UX 개선 작업",
-      "· AI TF로써 외부LLM플랫폼 구축 프로젝트 참여",
+      "· OK비교대출, OKpay 앱 및 웹 운영/유지보수 주도(담당 퍼블리셔)",
+      "· OK저축은행 모바일 앱 운영(외주사와 공동 담당)",
+      "· OK캐피탈 앱 및 웹 리뉴얼(외주사와 공동 담당)",
+      "· OK금융그룹 공식 홈페이지 유지보수(담당 퍼블리셔)",
+      "· AI TF : 퍼블리싱 자동화 및 LLM 기반 실험 주도",
     ],
   },
   {
@@ -25,7 +25,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.04 - 2023.08",
     achievements: [
-      "· 게임 관리자 페이지 화면 UI개발",
+      "· 관리자 페이지 신규 구축 프로젝트에서 UI 개발 전반 단독 수행",
     ],
   },
   {
@@ -34,7 +34,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.06",
     achievements: [
-      "· 신규 서비스 웹페이지(PC/MO) UI개발",
+      "· 한화생명보험 X 미국 스타트업 Need 공동 신규 서비스 런칭에 따른 반응형 웹 UI 설계 및 퍼블리싱",
     ],
   },
   {
@@ -43,10 +43,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2021.06 - 2023.04",
     achievements: [
-      "· 국내외 자사 웹서비스 운영, 구축 및 리뉴얼, 이벤트페이지 작업",
-      "· 자사 신규게임 관련 서비스 UI개발(관리자페이지, CBT페이지, 사전예약페이지, 공식홈페이지 등)",
-      "· NFT 등의 신규 사업 웹페이지, 이벤트페이지(PC/MO) 작업",
-      "· BI 플랫폼 화면 개발 및 유지/보수",
+      "· 국내외 웹서비스 운영 및 신규 게임 서비스 UI 개발",
     ],
   },
   {
@@ -55,8 +52,7 @@ export const workExperience = [
     position: "UI개발",
     period: "2020.11 - 2021.02",
     achievements: [
-      "· 카카오페이지, 카카오하모니 등 카카오 서비스 페이지 UI개발 참여",
-      "· 자사 홈페이지(PC/MO) 리뉴얼 작업",
+      "· 카카오 서비스 및 자사 홈페이지 UI 개발",
     ],
   },
   {
@@ -65,8 +61,16 @@ export const workExperience = [
     position: "UI개발",
     period: "2019.02 - 2020.03",
     achievements: [
-      "· e커머스 플랫폼(11번가)의 프로모션 페이지(PC/MO) 제작",
-      "· eBay 판매자 통합 관리페이지 운영",
+      "· e커머스 플랫폼 프로모션 및 운영 퍼블리싱"
+    ],
+  },
+  {
+    company: "넥슨(NEXON)",
+    location: "경기도 성남시",
+    position: "UI개발",
+    period: "2018.07 - 2018.10",
+    achievements: [
+      "· FIFA ONLINe 4 웹 서비스 운영 및 유지보수"
     ],
   },
 ];
