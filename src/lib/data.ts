@@ -12,21 +12,56 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.09 - 재직중",
     achievements: [
-      "· OK비교대출, OKpay 앱 및 웹 운영/유지보수 주도(담당 퍼블리셔)",
-      "· OK저축은행 모바일 앱 운영(외주사와 공동 담당)",
-      "· OK캐피탈 앱 및 웹 리뉴얼(외주사와 공동 담당)",
-      "· OK금융그룹 공식 홈페이지 유지보수(담당 퍼블리셔)",
-      "· AI TF : 퍼블리싱 자동화 및 LLM 기반 실험 주도",
-    ],
+      {
+        topic: "OK비교대출, OKpay 앱 및 웹 운영/유지보수 주도(담당 퍼블리셔)",
+        details: [
+          "서비스 고도화, UI 개선 및 운영 이슈 대응",
+          "정기 배포 및 퍼블리싱 품질 유지 관리",
+        ]
+      },
+      {
+        topic: "OK저축은행 모바일 앱 운영(외주사와 공동 담당)",
+        details: [
+          "외주 개발사와의 협업을 통한 기능 개발 및 유지보수",
+          "퍼블리싱 가이드 기반 화면 구현 및 UI 정합성 검수"
+        ]
+      },
+      {
+        topic: "OK캐피탈 앱 및 웹 리뉴얼(외주사와 공동 담당)",
+        details: [
+          "외주 개발사와의 협업을 통해 일정 조율 및 품질 검수 진행"
+        ]
+      },
+      {
+        topic: "OK금융그룹 공식 홈페이지 유지보수(담당 퍼블리셔)",
+        details: [
+          "전사 디자인 가이드에 따라 UI 구조 및 퍼블리싱 스타일 일관성 유지"
+        ]
+      },
+      {
+        topic: "AI TF : 퍼블리싱 자동화 및 LLM 기반 실험 주도",
+        details: [
+          "Cursor AI 기반 디자인 -> 코드 자동화 실험 진행",
+          "외부LLM플랫폼 구축 프로젝트 참여"
+        ]
+      }
+    ]
   },
   {
     company: "원유니버스(프리랜서)",
     location: "서울 강남구",
     position: "UI개발",
-    period: "2023.04 - 2023.08",
+    period: "2023.04 - 2023.07",
     achievements: [
-      "· 관리자 페이지 신규 구축 프로젝트에서 UI 개발 전반 단독 수행",
-    ],
+      {
+        topic: "신규 게임 관리자 페이지 UI 개발",
+        details: [
+          "관리자 페이지 신규 구축 프로젝트에서 UI 개발 전반 단독 수행",
+          "기획안 기반 퍼블리싱 구조 설계 및 인터랙션 구현",
+          "데이터 시각화를 위한 Chart.js 기반 컴포넌트 커스터마이징"
+        ]
+      }
+    ]
   },
   {
     company: "한화생명보험",
@@ -34,8 +69,13 @@ export const workExperience = [
     position: "UI개발",
     period: "2023.06",
     achievements: [
-      "· 한화생명보험 X 미국 스타트업 Need 공동 신규 서비스 런칭에 따른 반응형 웹 UI 설계 및 퍼블리싱",
-    ],
+      {
+        topic: "한화생명보험 X 미국 스타트업 Need 공동 서비스 런칭 페이지 UI 개발",
+        details: [
+          "신규 서비스 런칭에 따른 반응형 웹 UI 설계 및 퍼블리싱"
+        ]
+      }
+    ]
   },
   {
     company: "플레이위드코리아",
@@ -43,8 +83,16 @@ export const workExperience = [
     position: "UI개발",
     period: "2021.06 - 2023.04",
     achievements: [
-      "· 국내외 웹서비스 운영 및 신규 게임 서비스 UI 개발",
-    ],
+      {
+        topic: "국내외 웹서비스 운영 및 신규 게임 서비스 UI 개발",
+        details: [
+          "북미 포함 자사 웹서비스 운영, 구축 및 리뉴얼",
+          "NFT 등 신규 사업 관련 웹페이지 및 프로모션 페이지 제작",
+          "자사 신규 게임 관련 UI 개발",
+          "사내 BI 플랫폼 화면 개발 및 유지보수"
+        ]
+      }
+    ]
   },
   {
     company: "디케이테크인(dktechin a Kakao Company)",
@@ -52,8 +100,14 @@ export const workExperience = [
     position: "UI개발",
     period: "2020.11 - 2021.02",
     achievements: [
-      "· 카카오 서비스 및 자사 홈페이지 UI 개발",
-    ],
+      {
+        topic: "카카오 서비스 및 자사 홈페이지 UI 개발",
+        details: [
+          "카카오페이지, 카카오하모니 등 주요 카카오 서비스 페이지 UI 개발 참여",
+          "자사 홈페이지 리뉴얼 작업 수행"
+        ]
+      }
+    ]
   },
   {
     company: "씨티티디(CTTD)",
@@ -61,8 +115,14 @@ export const workExperience = [
     position: "UI개발",
     period: "2019.02 - 2020.03",
     achievements: [
-      "· e커머스 플랫폼 프로모션 및 운영 퍼블리싱"
-    ],
+      {
+        topic: "e커머스 플랫폼 프로모션 및 운영 퍼블리싱",
+        details: [
+          "LG전자 e커머스 플랫폼(11번가) 프로모션 페이지 제작",
+          "eBay 판매자용 통합 관리 시스템 화면 운영"
+        ]
+      }
+    ]
   },
   {
     company: "넥슨(NEXON)",
@@ -70,9 +130,15 @@ export const workExperience = [
     position: "UI개발",
     period: "2018.07 - 2018.10",
     achievements: [
-      "· FIFA ONLINe 4 웹 서비스 운영 및 유지보수"
-    ],
-  },
+      {
+        topic: "FIFA ONLINE 4 웹 서비스 운영 및 유지보수",
+        details: [
+          "기존 팀원 휴직에 따른 단기 대체 인력으로 서비스 운영 및 퍼블리싱 유지보수 수행",
+          "프로모션 페이지 및 정기 업데이트 대응"
+        ]
+      }
+    ]
+  }
 ];
 
 export const education = [
