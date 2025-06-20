@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                 <CardFooter className="flex justify-center items-center border-t border-border/30">
                   <button
                     type="button"
-                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4 focus:outline-none"
+                    className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link pt-4 focus:outline-none cursor-pointer"
                     onClick={() => handleOpenModal(project)}
                   >
                     VIEW PAGE
