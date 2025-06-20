@@ -41,8 +41,7 @@ export const workExperience = [
       {
         topic: "AI TF : 퍼블리싱 자동화 및 LLM 기반 실험 주도",
         details: [
-          "Cursor AI, Superflex, Builder.io 등 AI 기반 디자인-코드 변환 툴 실험 및 평가 진행",
-          "디자인 시안 정확도, 코드 품질, 기존 소스와의 호환성 등을 기준으로 툴별 변환 결과 비교 분석 및 사내 적용 가능성 검토",
+          "Cursor AI, Superflex, Builder.io 등 AI 기반 디자인-코드 변환 툴 비교 분석 및 사내 적용 가능성 검토",
           "외부LLM플랫폼 구축 프로젝트 참여"
         ]
       }
