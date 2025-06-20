@@ -9,7 +9,8 @@ export default {
     "h-[18px]",
     "w-[18px]",
     "z-10",
-    "shadow-md"
+    "shadow-md",
+    "font-pretendard"
   ],
   theme: {
     extend: {
