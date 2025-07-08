@@ -2,7 +2,6 @@ import { personalInfo } from "@/lib/data";
 import { Mail, Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
-import { style } from "framer-motion/client";
 
 export default function HeroSection() {
   const containerVariants = {
