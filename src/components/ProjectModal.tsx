@@ -28,7 +28,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
         style={{ animation: 'fadeIn 0.2s' }}
       >
         <button
-          className="absolute top-3 right-3 text-2xl text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
+          className="absolute top-2 right-2 w-10 h-10 flex items-center justify-center text-2xl text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors rounded-full"
           onClick={onClose}
           aria-label="닫기"
         >
@@ -37,7 +37,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
         <img
           src={project.image}
           alt={project.title + ' thumbnail'}
-          className="w-full max-w-xs h-48 object-cover rounded-md mb-4 border border-zinc-200 dark:border-zinc-700"
+          className="w-full max-w-xs h-48 object-cover rounded-md mb-4 border border-zinc-200 dark:border-zinc-700 mt-6"
         />
         <h2 className="text-xl font-bold mb-2 text-center">{project.title}</h2>
         <ul className="mb-4 w-full text-sm text-muted-foreground space-y-1">
