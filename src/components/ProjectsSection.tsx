@@ -49,26 +49,10 @@ export default function ProjectsSection() {
                   alt={`${project.title} preview`}
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
-                  <CardTitle className="text-center md:text-left font-semibold transition-colors duration-300">
+                  <CardTitle className="text-center font-semibold transition-colors duration-300">
                     {project.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="list-none ml-4 space-y-1 text-sm transition-all duration-300">
-                    {project.description.map((desc, i) => (
-                      <motion.li
-                        key={i}
-                        className="text-muted-foreground text-center md:text-left bg-transparent hover:bg-muted/10 transition-colors duration-300 rounded-md px-2 py-1"
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.1 }}
-                        viewport={{ once: true }}
-                      >
-                        {desc}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </CardContent>
                 <CardFooter className="flex justify-center items-center border-t border-border/30">
                   <button
                     type="button"
