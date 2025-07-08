@@ -5,6 +5,7 @@ interface ProjectModalProps {
   onClose: () => void;
   project: {
     title: string;
+    year: string;
     image: string;
     description: string[];
     url?: string; // url을 optional로 변경
@@ -40,6 +41,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
           className="w-full max-w-xs h-48 object-cover rounded-md mb-4 border border-zinc-200 dark:border-zinc-700 mt-6"
         />
         <h2 className="text-xl font-bold mb-2 text-center">{project.title}</h2>
+        <p className="text-sm text-muted-foreground mb-2">{project.year}</p>
         <ul className="mb-4 w-full text-sm text-muted-foreground space-y-1">
           {project.description.map((desc, i) => (
             <li key={i}>{desc}</li>

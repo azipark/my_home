@@ -52,6 +52,9 @@ export default function ProjectsSection() {
                   <CardTitle className="text-center font-semibold transition-colors duration-300">
                     {project.title}
                   </CardTitle>
+                  <p className="text-center text-xs text-muted-foreground mt-1">
+                    {project.year}
+                  </p>
                 </CardHeader>
                 <CardFooter className="flex justify-center items-center border-t border-border/30">
                   <button

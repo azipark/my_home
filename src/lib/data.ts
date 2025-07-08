@@ -194,6 +194,7 @@ export const skills = {
 export const projects = [
   {
     title: "포트폴리오",
+    year: "2025",
     image: "/images/projects_03.png",
     description: [
       "· Framework: Astro",
@@ -204,6 +205,7 @@ export const projects = [
   },
   {
     title: "OK비교대출 웹앱",
+    year: "2024-2025",
     url: "https://m.okbigyo.com/",
     image: "/images/projects_01.png",
     description: [
@@ -213,6 +215,7 @@ export const projects = [
   },
   {
     title: "SealM 동남아 홈페이지(PC/MO)",
+    year: "2022-2023",
     url: "https://sea.sealm.com/en",
     image: "/images/projects_02.png",
     description: [
