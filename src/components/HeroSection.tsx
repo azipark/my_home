@@ -94,7 +94,6 @@ export default function HeroSection() {
             <p className="text-muted-foreground pl-4 py-2 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
               &#183; 금융과 게임 산업 등 다양한 분야에서 UI 개발자로 일해왔습니다.<br/>
-              &#183; 웹 표준, 웹 접근성을 항상 염두에 두고 퍼블리싱 작업을 합니다.<br/>
               &#183; Cursor, Claude Code 같은 AI 도구들을 직접 실험하며 퍼블리싱의 새로운 가능성을 탐색하고 있습니다.<br/>
               &#183; React, Vue 등 다양한 프레임워크 환경에서의 실무 경험이 있습니다.<br/>
               &#183; Figma, Zeplin, Sketch, Git, SVN, ChangeFlow, Jira 등 다양한 협업 도구를 통해 디자이너·개발자와 협업해왔습니다.<br/>
