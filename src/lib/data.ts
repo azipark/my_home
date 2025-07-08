@@ -194,7 +194,6 @@ export const skills = {
 export const projects = [
   {
     title: "포트폴리오",
-    url: "https://m.okbigyo.com/",
     image: "/images/projects_03.png",
     description: [
       "· Framework: Astro",

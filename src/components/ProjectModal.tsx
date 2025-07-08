@@ -7,7 +7,7 @@ interface ProjectModalProps {
     title: string;
     image: string;
     description: string[];
-    url: string;
+    url?: string; // url을 optional로 변경
   } | null;
 }
 
@@ -23,7 +23,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
   if (!open || !project) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-      <div className="bg-white dark:bg-zinc-900 rounded-xl shadow-xl max-w-md w-full mx-4 p-6 relative flex flex-col items-center animate-fadeIn">
+      <div 
+        className="bg-white dark:bg-zinc-900 rounded-xl shadow-xl max-w-md w-full mx-4 p-6 relative flex flex-col items-center"
+        style={{ animation: 'fadeIn 0.2s' }}
+      >
         <button
           className="absolute top-3 right-3 text-2xl text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors"
           onClick={onClose}
@@ -42,16 +45,22 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
             <li key={i}>{desc}</li>
           ))}
         </ul>
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors w-full text-center"
-        >
-          프로젝트 바로가기
-        </a>
+        {project.url && (
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors w-full text-center"
+          >
+            프로젝트 바로가기
+          </a>
+        )}
       </div>
-      <style jsx>{`
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.97); }
+          to { opacity: 1; transform: scale(1); }
+        }
         @media (max-width: 640px) {
           .max-w-md {
             padding: 1.5rem 0.5rem;
@@ -64,13 +73,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
           h2 {
             font-size: 1.1rem;
           }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.2s;
-        }
-        @keyframes fadeIn {
-          from { opacity: 0; transform: scale(0.97); }
-          to { opacity: 1; transform: scale(1); }
         }
       `}</style>
     </div>
