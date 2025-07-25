@@ -44,7 +44,7 @@ export default function ExperienceSection() {
               >
                 <ul className="list-none space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
-                    <li key={i} className="mb-2">
+                    <li key={i}>
                       <div className="font-regular text-zinc-700 dark:text-zinc-200">
                         {achievement.topic}
                       </div>
