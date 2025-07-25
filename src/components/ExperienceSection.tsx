@@ -42,10 +42,11 @@ export default function ExperienceSection() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <ul className="list-none space-y-2 text-sm">
+                <ul className="space-y-2 text-sm">
                   {job.achievements.map((achievement, i) => (
-                    <li key={i}>
+                    <li key={i} className="relative pl-4">
                       <div className="font-regular text-zinc-700 dark:text-zinc-200">
+                        <span className="absolute left-0 top-0 text-zinc-400">•</span>
                         {achievement.topic}
                       </div>
                     </li>
