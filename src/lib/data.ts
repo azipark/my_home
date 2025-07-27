@@ -210,33 +210,60 @@ export const projects = [
   {
     title: "포트폴리오",
     year: "2025",
+    slug: "portfolio",
     image: "/images/projects_03.png",
+    technologies: "Astro | React | TypeScript | Tailwind CSS",
+    fullDescription: "개인 포트폴리오 웹사이트로, Astro 프레임워크를 기반으로 React와 TypeScript를 활용하여 구축했습니다. Tailwind CSS를 사용하여 모던하고 반응형인 디자인을 구현했으며, Vercel을 통해 배포했습니다.",
     description: [
       "· Framework: Astro",
       "· Front-end: React, TypeScript",
       "· Styling: Tailwind CSS",
       "· Deployment: Vercel"
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "OK비교대출 웹앱",
+      slug: "ok-loan"
+    }
   },
   {
     title: "OK비교대출 웹앱",
-    year: "2024-2025",
+    year: "2024-현재",
+    slug: "ok-loan",
     url: "https://m.okbigyo.com/",
     image: "/images/projects_01.png",
+    technologies: "VueJS | CSS | SCSS/Sass",
+    fullDescription: "Vue 기반의 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등) 퍼블리싱을 수행하고, 이벤트 페이지 기획에 따른 애니메이션 효과 적용 및 동적 UI를 구현했습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling : CSS, SCSS/Sass",
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "SealM 동남아 홈페이지",
+      slug: "sealm"
+    }
   },
   {
     title: "SealM 동남아 홈페이지(PC/MO)",
     year: "2022-2023",
+    slug: "sealm",
     url: "https://sea.sealm.com/en",
     image: "/images/projects_02.png",
+    technologies: "HTML | JavaScript | jQuery | CSS",
+    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 다국어 지원과 현지화를 통해 글로벌 사용자들에게 최적화된 경험을 제공했습니다.",
     description: [
       "· Front-end: HTML, Javascript, jQuery",
       "· Styling : CSS",
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "포트폴리오",
+      slug: "portfolio"
+    }
   },
 ];
 

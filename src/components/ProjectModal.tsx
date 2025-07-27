@@ -8,7 +8,8 @@ interface ProjectModalProps {
     year: string;
     image: string;
     description: string[];
-    url?: string; // url을 optional로 변경
+    url?: string;
+    slug: string;
   } | null;
 }
 
@@ -47,16 +48,24 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
             <li key={i}>{desc}</li>
           ))}
         </ul>
-        {project.url && (
+        <div className="flex flex-col space-y-2 w-full">
+          {project.url && (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors text-center"
+            >
+              프로젝트 바로가기
+            </a>
+          )}
           <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-2 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors w-full text-center"
+            href={`/project/${project.slug}`}
+            className="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center"
           >
-            프로젝트 바로가기
+            상세 페이지 보기
           </a>
-        )}
+        </div>
       </div>
       <style>{`
         @keyframes fadeIn {
