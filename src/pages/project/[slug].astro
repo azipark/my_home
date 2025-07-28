@@ -18,6 +18,7 @@ if (!project) {
 
 <Layout>
   <div class="min-h-screen bg-background text-foreground">
+    <div class="min-h-screen flex flex-col justify-between">
     <!-- Simple Header with Logo and Back Button -->
     <header class="bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-700">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,32 +44,31 @@ if (!project) {
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 h-screen lg:h-[90vh]">
       <!-- Project Overview Section -->
-      <section class="mb-16">
+      <section>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <!-- Left: Project Video or Image -->
-          {project.videos && project.videos.length > 0 ? (
-            <div class="flex justify-center items-center w-full h-[500px] bg-white">
+          <!-- Left: Project Image -->
+          <div class="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 md:p-8 flex items-center justify-center min-h-[300px] md:h-[80vh]">
+            {project.image.endsWith('.mp4') || project.image.endsWith('.webm') || project.image.endsWith('.mov') ? (
               <video
-                src={project.videos[0].src}
-                class="w-auto h-auto max-w-full max-h-full object-contain object-center block"
+                src={project.image}
+                autoplay
                 loop
                 muted
-                autoplay
+                class="max-w-full max-h-full w-auto h-auto rounded-lg shadow-lg object-contain"
+                poster={(project as any).poster || undefined}
               >
-                <track kind="captions" />
+                Your browser does not support the video tag.
               </video>
-            </div>
-          ) : (
-            <div class="bg-blue-50 dark:bg-zinc-800 rounded-lg p-0 flex items-center justify-center min-h-[400px]">
+            ) : (
               <img 
                 src={project.image} 
                 alt={project.title}
-                class="max-w-full h-auto rounded-lg shadow-lg"
+                class="max-w-full max-h-full w-auto h-auto rounded-lg shadow-lg object-contain"
               />
-            </div>
-          )}
+            )}
+          </div>
           
           <!-- Right: Project Info -->
           <div class="space-y-8 lg:flex lg:flex-col lg:justify-center lg:h-full">
@@ -109,11 +109,22 @@ if (!project) {
               return (
                 <div class="space-y-4">
                   {'image' in (screenshot as any) && (screenshot as any).image && (
-                    <img
-                      src={(screenshot as any).image}
-                      alt={(screenshot as any).alt || `${project.title} screenshot ${index + 1}`}
-                      class="w-full rounded-lg shadow-lg border border-gray-200"
-                    />
+                    (screenshot as any).image.endsWith('.mp4') || (screenshot as any).image.endsWith('.webm') || (screenshot as any).image.endsWith('.mov') ? (
+                      <video
+                        src={(screenshot as any).image}
+                        controls
+                        class="w-full rounded-lg shadow-lg border border-gray-200"
+                        poster={(screenshot as any).poster || undefined}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img
+                        src={(screenshot as any).image}
+                        alt={(screenshot as any).alt || `${project.title} screenshot ${index + 1}`}
+                        class="w-full rounded-lg shadow-lg border border-gray-200"
+                      />
+                    )
                   )}
                   {'description' in (screenshot as any) && (screenshot as any).description && (
                     <div class="prose prose-gray max-w-none">
@@ -189,6 +200,7 @@ if (!project) {
         </div>
       </div>
     </section>
+    </div>
   </div>
   
   <script>

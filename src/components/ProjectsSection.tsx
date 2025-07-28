@@ -53,18 +53,18 @@ export default function ProjectsSection() {
               <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-64 md:h-full flex flex-col">
                 <CardHeader className="flex-1 flex flex-col">
                   <img
-                    src={project.image}
-                    alt={`${project.title} preview`}
+                  src={(project as any).poster || project.image}
+                  alt={`${project.title} preview`}
                     className="w-full h-24 md:h-48 object-cover rounded-md mb-3 md:mb-4"
-                  />
+                />
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <CardTitle className="text-center font-semibold transition-colors duration-300 text-sm md:text-lg">
-                        {project.title}
-                      </CardTitle>
-                      <p className="text-center text-xs text-muted-foreground mt-1">
-                        {project.year}
-                      </p>
+                    {project.title}
+                  </CardTitle>
+                  <p className="text-center text-xs text-muted-foreground mt-1">
+                    {project.year}
+                  </p>
                     </div>
                     <CardFooter className="flex justify-center items-center border-t border-border/30 mt-3 md:mt-4 pt-3 md:pt-4">
                       <a

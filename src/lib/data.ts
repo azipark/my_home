@@ -223,6 +223,27 @@ export const projects = [
     screenshots: [],
     additionalContent: null,
     nextProject: {
+      title: "한도조회 결과 페이지",
+      slug: "loan-inquiry-result"
+    }
+  },
+  {
+    title: "OK비교대출 - 한도조회 결과 페이지",
+    year: "2025",
+    slug: "loan-inquiry-result",
+    image: "/images/projects_05.mp4",
+    poster: "/images/projects_04.png",
+    technologies: "VueJS | SCSS/Sass",
+    fullDescription: "대출 한도조회 결과를 표시하는 페이지로, 사용자가 입력한 정보를 바탕으로 대출 가능 한도를 계산하고 결과를 직관적으로 보여주는 UI를 구현했습니다. 반응형 디자인과 사용자 친화적인 인터페이스를 중점으로 개발했습니다.",
+    description: [
+      "· Front-end: VueJS",
+      "· Styling: SCSS/SASS",
+      "· 반응형 디자인",
+      "· 사용자 인터페이스 최적화"
+    ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
       title: "OK비교대출 웹앱",
       slug: "ok-loan"
     }
@@ -233,11 +254,11 @@ export const projects = [
     slug: "ok-loan",
     url: "https://m.okbigyo.com/",
     image: "/images/projects_06.png",
-    technologies: "VueJS | CSS | SCSS/Sass",
+    technologies: "VueJS | SCSS/Sass",
     fullDescription: "Vue 기반의 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등) 퍼블리싱을 수행하고, 이벤트 페이지 기획에 따른 애니메이션 효과 적용 및 동적 UI를 구현했습니다.",
     description: [
       "· Front-end: VueJS",
-      "· Styling : CSS, SCSS/Sass",
+      "· Styling: SCSS/SASS",
     ],
     screenshots: [],
     additionalContent: null,

@@ -49,16 +49,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ open, onClose, project }) =
           ))}
         </ul>
         <div className="flex flex-col space-y-2 w-full">
-          {project.url && (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
+        {project.url && (
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
               className="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition-colors text-center"
-            >
-              프로젝트 바로가기
-            </a>
-          )}
+          >
+            프로젝트 바로가기
+          </a>
+        )}
           <a
             href={`/project/${project.slug}`}
             className="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center"
