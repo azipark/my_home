@@ -210,33 +210,110 @@ export const projects = [
   {
     title: "포트폴리오",
     year: "2025",
-    image: "/images/projects_03.png",
+    slug: "portfolio",
+    image: "/images/projects_01.png",
+    technologies: "Astro | React | TypeScript | Tailwind CSS",
+    fullDescription: "개인 포트폴리오 웹사이트로, Astro 프레임워크를 기반으로 React와 TypeScript를 활용하여 구축했습니다. Tailwind CSS를 사용하여 모던하고 반응형인 디자인을 구현했으며, Vercel을 통해 배포했습니다.",
     description: [
       "· Framework: Astro",
       "· Front-end: React, TypeScript",
       "· Styling: Tailwind CSS",
       "· Deployment: Vercel"
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "한도조회 페이지",
+      slug: "limit-inquiry"
+    }
+  },
+  {
+    title: "한도조회 페이지",
+    year: "2024",
+    slug: "limit-inquiry",
+    image: "/images/projects_02.png",
+    technologies: "VueJS | CSS | SCSS/Sass",
+    fullDescription: "대출 한도 조회를 위한 사용자 친화적인 인터페이스를 개발했습니다. 직관적인 폼 디자인과 실시간 유효성 검사를 통해 사용자가 쉽게 한도 조회를 할 수 있도록 구현했습니다.",
+    description: [
+      "· Front-end: VueJS",
+      "· Styling: CSS, SCSS/Sass",
+      "· Features: 실시간 유효성 검사, 반응형 디자인"
+    ],
+    screenshots: [],
+    additionalContent: null,
+    videos: [
+      {
+        src: "/images/projects_04.mp4",
+        title: "한도조회 페이지"
+      }
+    ],
+    nextProject: {
+      title: "한도조회 결과 페이지",
+      slug: "limit-result"
+    }
+  },
+  {
+    title: "한도조회 결과 페이지",
+    year: "2024",
+    slug: "limit-result",
+    image: "/images/projects_04.png",
+    technologies: "VueJS | CSS | SCSS/Sass",
+    fullDescription: "한도 조회 결과를 명확하고 시각적으로 표현하는 페이지를 개발했습니다. 사용자가 조회한 한도 정보를 직관적으로 확인할 수 있도록 차트와 그래프를 활용한 데이터 시각화를 구현했습니다.",
+    description: [
+      "· Front-end: VueJS",
+      "· Styling: CSS, SCSS/Sass",
+      "· Features: 데이터 시각화, 차트 컴포넌트"
+    ],
+    screenshots: [],
+    additionalContent: null,
+    videos: [
+      {
+        src: "/images/projects_05.mp4",
+        title: "한도조회 결과 페이지"
+      }
+    ],
+    nextProject: {
+      title: "OK비교대출 웹앱",
+      slug: "ok-loan"
+    }
   },
   {
     title: "OK비교대출 웹앱",
-    year: "2024-2025",
+    year: "2024-현재",
+    slug: "ok-loan",
     url: "https://m.okbigyo.com/",
-    image: "/images/projects_01.png",
+    image: "/images/projects_06.png",
+    technologies: "VueJS | CSS | SCSS/Sass",
+    fullDescription: "Vue 기반의 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등) 퍼블리싱을 수행하고, 이벤트 페이지 기획에 따른 애니메이션 효과 적용 및 동적 UI를 구현했습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling : CSS, SCSS/Sass",
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "SealM 동남아 홈페이지",
+      slug: "sealm"
+    }
   },
   {
     title: "SealM 동남아 홈페이지(PC/MO)",
     year: "2022-2023",
+    slug: "sealm",
     url: "https://sea.sealm.com/en",
-    image: "/images/projects_02.png",
+    image: "/images/projects_07.png",
+    technologies: "HTML | JavaScript | jQuery | CSS",
+    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 다국어 지원과 현지화를 통해 글로벌 사용자들에게 최적화된 경험을 제공했습니다.",
     description: [
       "· Front-end: HTML, Javascript, jQuery",
       "· Styling : CSS",
     ],
+    screenshots: [],
+    additionalContent: null,
+    nextProject: {
+      title: "포트폴리오",
+      slug: "portfolio"
+    }
   },
 ];
 
