@@ -234,7 +234,7 @@ export const projects = [
     image: "/images/projects_05.mp4",
     poster: "/images/projects_04.png",
     technologies: "VueJS | SCSS/Sass",
-    fullDescription: "대출 한도조회 결과를 표시하는 페이지로, 사용자가 입력한 정보를 바탕으로 대출 가능 한도를 계산하고 결과를 직관적으로 보여주는 UI를 구현했습니다. 반응형 디자인과 사용자 친화적인 인터페이스를 중점으로 개발했습니다.",
+    fullDescription: "한도조회 결과 화면은 사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용했습니다. 각 UI 요소는 등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도할 수 있도록 구현했습니다. 특히 결과 정보의 전환 효과 등을 통해 정보에 대한 몰입감을 높이고, 이후 ‘대출 신청’ 등 후속 행동을 유도하는 흐름을 강화했습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling: SCSS/SASS",
@@ -259,21 +259,16 @@ export const projects = [
     year: "2024-현재",
     slug: "ok-loan",
     url: "https://m.okbigyo.com/",
-    image: "/images/projects_06.png",
+    image: "/images/projects_07.png",
+    poster: "/images/projects_06.png",
     technologies: "VueJS | SCSS/Sass",
-    fullDescription: "Vue 기반의 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등) 퍼블리싱을 수행하고, 이벤트 페이지 기획에 따른 애니메이션 효과 적용 및 동적 UI를 구현했습니다.",
+    fullDescription: "Vue 기반의 금융 서비스 웹앱으로, 사용자 편의성과 접근성을 고려한 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등)의 퍼블리싱을 담당했습니다. 제휴 금융사 페이지 및 정보 입력 UI의 정적/반응형 마크업부터 이벤트성 페이지의 애니메이션 효과 구현, UI 고도화 작업까지 폭넓은 영역을 수행하며 전체 서비스 품질 유지에 기여했습니다. 신규 기능 개발뿐 아니라, 운영 이슈 대응과 정기 배포 등 유지보수 업무 전반에도 적극 참여하였습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling: SCSS/SASS",
     ],
     screenshots: [],
     additionalContent: null,
-    videos: [
-      {
-        src: "/images/projects_05.mp4",
-        title: "OK비교대출 웹앱 데모 영상"
-      }
-    ],
     nextProject: {
       title: "SealM 동남아 홈페이지",
       slug: "sealm"
@@ -284,7 +279,8 @@ export const projects = [
     year: "2022-2023",
     slug: "sealm",
     url: "https://sea.sealm.com/en",
-    image: "/images/projects_07.png",
+    image: "/images/projects_09.png",
+    poster: "/images/projects_06.png",
     technologies: "HTML | JavaScript | jQuery | CSS",
     fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 다국어 지원과 현지화를 통해 글로벌 사용자들에게 최적화된 경험을 제공했습니다.",
     description: [
