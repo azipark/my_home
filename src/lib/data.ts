@@ -280,7 +280,7 @@ export const projects = [
     slug: "sealm",
     url: "https://sea.sealm.com/en",
     image: "/images/projects_09.png",
-    poster: "/images/projects_06.png",
+    poster: "/images/projects_08.png",
     technologies: "HTML | JavaScript | jQuery | CSS",
     fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 다국어 지원과 현지화를 통해 글로벌 사용자들에게 최적화된 경험을 제공했습니다.",
     description: [
