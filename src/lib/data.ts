@@ -243,6 +243,12 @@ export const projects = [
     ],
     screenshots: [],
     additionalContent: null,
+    videos: [
+      {
+        src: "/images/projects_05.mp4",
+        title: "OK비교대출 한도조회 결과 페이지 데모 영상"
+      }
+    ],
     nextProject: {
       title: "OK비교대출 웹앱",
       slug: "ok-loan"
