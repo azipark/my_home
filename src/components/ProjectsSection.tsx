@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                     {project.year}
                   </p>
                     </div>
-                    <CardFooter className="flex justify-center items-center border-t border-border/30 mt-3 md:mt-4 pt-3 md:pt-4">
+                    <CardFooter className="flex justify-center items-center border-t border-border/30 mt-3 md:mt-4 pt-4 md:pt-4">
                       <a
                         href={`/project/${project.slug}`}
                         className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link focus:outline-none cursor-pointer"
