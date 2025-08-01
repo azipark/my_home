@@ -223,7 +223,7 @@ export const projects = [
     screenshots: [],
     additionalContent: null,
     nextProject: {
-      title: "한도조회 결과 페이지",
+      title: "OK비교대출 - 한도조회 결과 페이지",
       slug: "loan-inquiry-result"
     }
   },
@@ -234,7 +234,7 @@ export const projects = [
     image: "/images/projects_05.mp4",
     poster: "/images/projects_04.png",
     technologies: "VueJS | SCSS/Sass",
-    fullDescription: "한도조회 결과 화면은 사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용했습니다. 각 UI 요소는 등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도할 수 있도록 구현했습니다. 특히 결과 정보의 전환 효과 등을 통해 정보에 대한 몰입감을 높이고, 이후 ‘대출 신청’ 등 후속 행동을 유도하는 흐름을 강화했습니다.",
+    fullDescription: "한도조회 결과 화면은 사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용했습니다. 각 UI 요소는 등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도할 수 있도록 구현했습니다. 특히 결과 정보의 전환 효과 등을 통해 정보에 대한 몰입감을 높이고, 이후 '대출 신청' 등 후속 행동을 유도하는 흐름을 강화했습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling: SCSS/SASS",
@@ -250,39 +250,51 @@ export const projects = [
       }
     ],
     nextProject: {
-      title: "OK비교대출 웹앱",
-      slug: "ok-loan"
+      title: "원유니버스 게임 관리자 페이지",
+      slug: "oneuniverse-admin"
     }
-  },
+  },                                                
   {
-    title: "OK비교대출 웹앱",
-    year: "2024-현재",
-    slug: "ok-loan",
-    url: "https://m.okbigyo.com/",
-    image: "/images/projects_07.png",
-    poster: "/images/projects_06.png",
-    technologies: "VueJS | SCSS/Sass",
-    fullDescription: "Vue 기반의 금융 서비스 웹앱으로, 사용자 편의성과 접근성을 고려한 주요 화면(메인, 전체메뉴, 정보입력, 마이페이지 등)의 퍼블리싱을 담당했습니다. 제휴 금융사 페이지 및 정보 입력 UI의 정적/반응형 마크업부터 이벤트성 페이지의 애니메이션 효과 구현, UI 고도화 작업까지 폭넓은 영역을 수행하며 전체 서비스 품질 유지에 기여했습니다. 신규 기능 개발뿐 아니라, 운영 이슈 대응과 정기 배포 등 유지보수 업무 전반에도 적극 참여하였습니다.",
+    title: "원유니버스 게임 관리자 페이지",
+    year: "2023",
+    slug: "oneuniverse-admin",
+    technologies: "HTML | JavaScript | jQuery | CSS | Chart.js",
+    fullDescription: "웹 기반 게임 관리자(Admin) 페이지 구축 프로젝트에 프리랜서로 단독 참여하여, 전체 화면의 퍼블리싱과 UI 흐름 구현을 전담하였습니다.\n\n기획자와 직접 커뮤니케이션하며 요구사항을 정리하고, 프론트엔드 전담 인력으로서 개발자와 함께 기술 스택(프레임워크·툴 등)을 논의하고 선정하는 등 초기 구조 설계부터 마무리까지 주도적으로 참여했습니다.\n\n요구사항 변경에 유연하게 대응하며 관리자용 인터페이스에 적합한 직관적인 UI/UX 구조 설계와 퍼블리싱 품질 확보에 집중하였습니다.",
     description: [
-      "· Front-end: VueJS",
-      "· Styling: SCSS/SASS",
+      "· Front-end: HTML, JavaScript, jQuery",
+      "· Styling: CSS",
+      "· Data Visualization: Chart.js",
+      "· 반응형 디자인",
+      "· 관리자 시스템 UI/UX"
     ],
-    screenshots: [],
+    image: "/images/projects_06.png",
+    screenshots: [
+      {
+        image: "/images/projects_07.png",
+        alt: "원유니버스 관리자 페이지 - 계정 관리 화면",
+        description: "계정 관리 기능으로 사용자 계정 정보, 권한 레벨, 접속 승인 상태 등을 관리할 수 있습니다."
+      },
+      {
+        image: "/images/projects_08.png", 
+        alt: "원유니버스 관리자 페이지 - 지표 분석 화면",
+        description: "Chart.js를 활용한 데이터 시각화로 VIP 사용자, 동시접속자(CCU), 일일방문자수(DAU) 등의 지표를 분석합니다."
+      }
+    ],
     additionalContent: null,
     nextProject: {
-      title: "SealM 동남아 홈페이지",
+      title: "SealM 동남아 홈페이지(PC/MO)",
       slug: "sealm"
     }
-  },                                                  
+  },
   {
     title: "SealM 동남아 홈페이지(PC/MO)",
     year: "2022-2023",
     slug: "sealm",
     url: "https://sea.sealm.com/en",
-    image: "/images/projects_09.png",
-    poster: "/images/projects_08.png",
+    image: "/images/projects_10.png",
+    poster: "/images/projects_09.png",
     technologies: "HTML | JavaScript | jQuery | CSS",
-    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 다국어 지원과 현지화를 통해 글로벌 사용자들에게 최적화된 경험을 제공했습니다.",
+    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 영어, 중국어, 인도네시아어, 대만어 등 다국어 지원 및 현지화 작업을 통해 글로벌 사용자에게 최적화된 UX를 제공하였습니다. 또한 외주 개발사와 협업하며 기획, 디자인, 개발, 마케팅팀과의 전방위 커뮤니케이션을 직접 주도하였고, 다양한 부서 간 요구사항을 조율하며 일정 관리와 품질 유지에 적극 기여했습니다.",
     description: [
       "· Front-end: HTML, Javascript, jQuery",
       "· Styling : CSS",

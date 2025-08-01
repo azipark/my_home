@@ -43,7 +43,7 @@ export default function ProjectsSection() {
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🚀 Projects
+            Projects
           </h2>
         </MotionWrapper>
 
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                   <img
                   src={(project as any).poster || project.image}
                   alt={`${project.title} preview`}
-                    className="w-full h-24 md:h-48 object-cover rounded-md mb-3 md:mb-4"
+                    className="w-full h-32 md:h-56 object-contain rounded-md mb-3 md:mb-4 bg-gray-50 dark:bg-gray-800"
                 />
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
