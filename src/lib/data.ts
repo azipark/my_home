@@ -259,7 +259,7 @@ export const projects = [
     year: "2023",
     slug: "oneuniverse-admin",
     technologies: "HTML | JavaScript | jQuery | CSS | Chart.js",
-    fullDescription: "웹 기반 게임 관리자(Admin) 페이지 구축 프로젝트에 프리랜서로 단독 참여하여, 전체 화면의 퍼블리싱과 UI 흐름 구현을 전담하였습니다.\n\n기획자와 직접 커뮤니케이션하며 요구사항을 정리하고, 프론트엔드 전담 인력으로서 개발자와 함께 기술 스택(프레임워크·툴 등)을 논의하고 선정하는 등 초기 구조 설계부터 마무리까지 주도적으로 참여했습니다.\n\n요구사항 변경에 유연하게 대응하며 관리자용 인터페이스에 적합한 직관적인 UI/UX 구조 설계와 퍼블리싱 품질 확보에 집중하였습니다.",
+    fullDescription: "웹 기반 게임 관리자(Admin) 페이지 구축 프로젝트에 프리랜서로 단독 참여하여, 전체 화면의 퍼블리싱과 UI 흐름 구현을 전담하였습니다.\n\n기획자와 직접 커뮤니케이션하며 요구사항을 정리하고, 프론트엔드 전담 인력으로서 개발자와 함께 기술 스택(프레임워크·툴 등)을 논의하고 선정하는 등 초기 구조 설계부터 마무리까지 주도적으로 참여했습니다.\n요구사항 변경에 유연하게 대응하며 관리자용 인터페이스에 적합한 직관적인 UI/UX 구조 설계와 퍼블리싱 품질 확보에 집중하였습니다.",
     description: [
       "· Front-end: HTML, JavaScript, jQuery",
       "· Styling: CSS",
@@ -294,7 +294,7 @@ export const projects = [
     image: "/images/projects_10.png",
     poster: "/images/projects_09.png",
     technologies: "HTML | JavaScript | jQuery | CSS",
-    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 영어, 중국어, 인도네시아어, 대만어 등 다국어 지원 및 현지화 작업을 통해 글로벌 사용자에게 최적화된 UX를 제공하였습니다. 또한 외주 개발사와 협업하며 기획, 디자인, 개발, 마케팅팀과의 전방위 커뮤니케이션을 직접 주도하였고, 다양한 부서 간 요구사항을 조율하며 일정 관리와 품질 유지에 적극 기여했습니다.",
+    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다.\n\n영어, 중국어, 인도네시아어, 대만어 등 다국어 지원 및 현지화 작업을 통해 글로벌 사용자에게 최적화된 UX를 제공하였습니다. 또한 외주 개발사와 협업하며 기획, 디자인, 개발, 마케팅팀과의 전방위 커뮤니케이션을 직접 주도하였고, 다양한 부서 간 요구사항을 조율하며 일정 관리와 품질 유지에 적극 기여했습니다.",
     description: [
       "· Front-end: HTML, Javascript, jQuery",
       "· Styling : CSS",
