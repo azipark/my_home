@@ -17,7 +17,7 @@ if (!project) {
 ---
 
 <Layout>
-  <div class="min-h-screen bg-background text-foreground">
+  <div class="min-h-screen bg-background text-foreground" style="overflow-x: hidden;">
     <div class="min-h-screen flex flex-col justify-between">
     <!-- Simple Header with Logo and Back Button -->
     <header class="bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-700">
@@ -269,6 +269,12 @@ if (!project) {
             window.location.href = '/#projects';
           }
         });
+      }
+      
+      // Chrome에서 스크롤 문제 해결
+      if (navigator.userAgent.includes('Chrome')) {
+        document.body.style.overflowX = 'hidden';
+        document.documentElement.style.overflowX = 'hidden';
       }
     });
   </script>
