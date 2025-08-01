@@ -17,7 +17,7 @@ if (!project) {
 ---
 
 <Layout>
-  <div class="min-h-screen bg-background text-foreground" style="overflow-x: hidden;">
+  <div class="min-h-screen bg-background text-foreground">
     <div class="min-h-screen flex flex-col justify-between">
     <!-- Simple Header with Logo and Back Button -->
     <header class="bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-700">
@@ -255,6 +255,27 @@ if (!project) {
     </div>
   </div>
   
+  <style>
+    /* 모바일 Chrome 주소창 하단 위치 시 스크롤 문제 해결 */
+    @media screen and (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+      }
+      
+      /* 모바일에서 주소창이 하단에 위치할 때 발생하는 문제 방지 */
+      body {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+      }
+      
+      html {
+        height: -webkit-fill-available;
+      }
+    }
+  </style>
+  
   <script>
     // 이전 버튼 클릭 시 네비게이션 처리
     document.addEventListener('DOMContentLoaded', function() {
@@ -271,11 +292,33 @@ if (!project) {
         });
       }
       
-      // Chrome에서 스크롤 문제 해결
-      if (navigator.userAgent.includes('Chrome')) {
-        document.body.style.overflowX = 'hidden';
-        document.documentElement.style.overflowX = 'hidden';
+      // 모바일 Chrome에서 주소창 하단 위치 시 스크롤 문제 해결
+      function handleMobileChromeScroll() {
+        const isMobile = window.innerWidth <= 768;
+        const isChrome = navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Edg');
+        
+        if (isMobile && isChrome) {
+          // 모바일 Chrome에서만 적용
+          document.documentElement.style.overflowX = 'hidden';
+          document.body.style.overflowX = 'hidden';
+          
+          // 주소창 상태 변화 감지
+          let initialViewportHeight = window.innerHeight;
+          
+          window.addEventListener('resize', function() {
+            const currentViewportHeight = window.innerHeight;
+            // 주소창이 나타나거나 사라질 때 (뷰포트 높이가 변할 때)
+            if (Math.abs(currentViewportHeight - initialViewportHeight) > 50) {
+              // 스크롤 위치 조정
+              setTimeout(() => {
+                window.scrollTo(0, window.scrollY);
+              }, 100);
+            }
+          });
+        }
       }
+      
+      handleMobileChromeScroll();
     });
   </script>
 </Layout> 
