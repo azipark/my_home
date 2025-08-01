@@ -50,7 +50,7 @@ export default function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
-              <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-64 md:h-full flex flex-col">
+              <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-68 md:h-[450px] flex flex-col">
                 <CardHeader className="flex-1 flex flex-col">
                   <img
                   src={(project as any).poster || project.image}
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                     {project.year}
                   </p>
                     </div>
-                    <CardFooter className="flex justify-center items-center border-t border-border/30 mt-3 md:mt-4 pt-4 md:pt-4">
+                    <CardFooter className="pt-0 px-1 md:p-6 flex justify-center items-center border-t border-border/30 mt-3 md:mt-4 h-12 md:h-16">
                       <a
                         href={`/project/${project.slug}`}
                         className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link focus:outline-none cursor-pointer"
