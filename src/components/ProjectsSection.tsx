@@ -27,15 +27,6 @@ export default function ProjectsSection() {
         }
       }, 100);
     }
-    
-    // 저장된 스크롤 위치가 있으면 복원
-    const savedScrollPosition = sessionStorage.getItem('projectsScrollPosition');
-    if (savedScrollPosition) {
-      setTimeout(() => {
-        window.scrollTo(0, parseInt(savedScrollPosition));
-        sessionStorage.removeItem('projectsScrollPosition');
-      }, 100);
-    }
   }, []);
 
   return (
@@ -70,10 +61,6 @@ export default function ProjectsSection() {
                       <a
                         href={`/project/${project.slug}`}
                         className="flex items-center text-sm text-muted-foreground hover:text-purple-500 transition-colors group/link focus:outline-none cursor-pointer"
-                        onClick={() => {
-                          // 현재 스크롤 위치를 저장
-                          sessionStorage.setItem('projectsScrollPosition', window.scrollY.toString());
-                        }}
                       >
                         VIEW DETAIL
                       </a>
