@@ -233,7 +233,7 @@ export const projects = [
     slug: "loan-inquiry-result",
     image: "/images/projects_05.mp4",
     poster: "/images/projects_04.png",
-    technologies: "VueJS | SCSS/Sass",
+    technologies: "VueJS | SCSS/SASS",
     fullDescription: "한도조회 결과 화면은 사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용했습니다. 각 UI 요소는 등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도할 수 있도록 구현했습니다. 특히 결과 정보의 전환 효과 등을 통해 정보에 대한 몰입감을 높이고, 이후 '대출 신청' 등 후속 행동을 유도하는 흐름을 강화했습니다.",
     description: [
       "· Front-end: VueJS",
