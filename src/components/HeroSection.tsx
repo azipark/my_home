@@ -87,18 +87,15 @@ export default function HeroSection() {
         </motion.div>
 
         <MotionWrapper>
-          <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
-            <p className="text-muted-foreground pl-4 py-2 relative" dangerouslySetInnerHTML={{
-              __html: `
-                <span class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-                &#183; <strong>금융과 게임 산업 등 다양한 분야</strong>에서 UI 개발자로 일해왔습니다.<br/>
-                &#183; Cursor, Claude Code 같은 <strong>AI 도구</strong>들을 직접 실험하며 <strong>퍼블리싱의 새로운 가능성</strong>을 탐색하고 있습니다.<br/>
-                &#183; React, Vue, WebSquare 등 <strong>다양한 프레임워크 환경</strong>에서의 실무 경험이 있습니다.<br/>
-                &#183; <strong>Figma, Zeplin, Sketch, Git, SVN, ChangeFlow, Jira</strong> 등 다양한 협업 도구를 통해 디자이너·개발자와 협업해왔습니다.<br/>
-                &#183; 함께 일하는 동료들과의 <strong>소통과 신뢰를 중요하게 여기며, 유연한 협업 환경 조성을 지향</strong>합니다.
-              `
-            }}>
-            </p>
+          <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm max-w-6xl mx-auto">
+            <div className="text-muted-foreground pl-4 py-2 relative leading-relaxed">
+              <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
+              <div className="mb-2">&#183; <strong>금융과 게임 산업 등 다양한 분야</strong>에서 UI 개발자로 일해왔습니다.</div>
+              <div className="mb-2">&#183; Cursor, Claude Code 같은 <strong>AI 도구</strong>들을 직접 실험하며 <strong>퍼블리싱의 새로운 가능성</strong>을 탐색하고 있습니다.</div>
+              <div className="mb-2">&#183; React, Vue, WebSquare 등 <strong>다양한 프레임워크 환경</strong>에서의 실무 경험이 있습니다.</div>
+              <div className="mb-2">&#183; <strong>Figma, Zeplin, Sketch, Git, SVN, ChangeFlow, Jira</strong> 등 다양한 협업 도구를 통해 기획자, 디자이너, 개발자 등 다양한 직군과 협업해왔습니다.</div>
+              <div className="mb-2">&#183; 함께 일하는 동료들과의 <strong>소통과 신뢰를 중요하게 여기며, 유연한 협업 환경 조성을 지향</strong>합니다.</div>
+            </div>
           </div>
         </MotionWrapper>
       </div>
