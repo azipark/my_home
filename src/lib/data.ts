@@ -9,7 +9,7 @@ export const workExperience = [
   {
     company: "오케이금융그룹",
     location: "서울 중구",
-    position: "UI개발",
+    position: "웹 퍼블리셔",
     period: "2023.09 - 재직중",
     achievements: [
       {
@@ -66,7 +66,7 @@ export const workExperience = [
   {
     company: "원유니버스(프리랜서)",
     location: "서울 강남구",
-    position: "UI개발",
+    position: "UI 개발",
     period: "2023.04 - 2023.07",
     achievements: [
       {
@@ -82,7 +82,7 @@ export const workExperience = [
   {
     company: "한화생명보험",
     location: "서울 중구",
-    position: "UI개발",
+    position: "UI 개발",
     period: "2023.06",
     achievements: [
       {
@@ -96,7 +96,7 @@ export const workExperience = [
   {
     company: "플레이위드코리아",
     location: "경기도 성남시",
-    position: "UI개발",
+    position: "웹 퍼블리셔",
     period: "2021.06 - 2023.04",
     achievements: [
       {
@@ -127,7 +127,7 @@ export const workExperience = [
   {
     company: "디케이테크인",
     location: "경기도 성남시",
-    position: "UI개발",
+    position: "UI 개발",
     period: "2020.11 - 2021.02",
     achievements: [
       {
@@ -142,7 +142,7 @@ export const workExperience = [
   {
     company: "씨티티디(CTTD)",
     location: "서울 강남구",
-    position: "UI개발",
+    position: "웹 퍼블리셔",
     period: "2019.02 - 2020.03",
     achievements: [
       {
@@ -157,7 +157,7 @@ export const workExperience = [
   {
     company: "넥슨(NEXON)",
     location: "경기도 성남시",
-    position: "UI개발",
+    position: "UI 개발",
     period: "2018.07 - 2018.10",
     achievements: [
       {
