@@ -27,7 +27,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-16 scroll-mt-24 md:py-24 relative overflow-hidden">
+    <section className="py-12 scroll-mt-24 relative overflow-hidden">
       <div className="container max-w-4xl mx-auto px-6 md:px-4 relative z-10">
         <motion.div
           className="flex flex-col md:flex-row md:items-center justify-between mb-8"
@@ -58,7 +58,6 @@ export default function HeroSection() {
               <motion.div
                 className="flex items-center text-sm text-muted-foreground"
                 variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <MapPin className="h-4 w-4 mr-2" />
                 {personalInfo.location}
@@ -68,7 +67,6 @@ export default function HeroSection() {
                 href={`mailto:${personalInfo.email}`}
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
                 variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Mail className="h-4 w-4 mr-2" />
                 {personalInfo.email}
@@ -80,7 +78,6 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
                 variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Github className="h-4 w-4 mr-2" />
                 GitHub

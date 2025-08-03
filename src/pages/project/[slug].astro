@@ -29,15 +29,15 @@ if (!project) {
             </a>
           </div>
           <div class="flex items-center">
-            <button 
-              id="backButton"
+            <a 
+              href="/#projects"
               class="inline-flex items-center px-4 py-2 bg-black text-white text-sm font-medium rounded-md hover:bg-gray-800 transition-colors cursor-pointer"
             >
               <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
               </svg>
               이전
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -75,8 +75,7 @@ if (!project) {
               </div>
               
               <div class="prose prose-gray max-w-none">
-                <p class="text-foreground leading-relaxed text-md whitespace-pre-line">
-                  {project.fullDescription}
+                <p class="text-foreground leading-relaxed text-md" set:html={project.fullDescription}>
                 </p>
               </div>
               <!-- Project External Link (if exists) -->
@@ -130,8 +129,7 @@ if (!project) {
               </div>
               
               <div class="prose prose-gray max-w-none">
-                <p class="text-foreground leading-relaxed text-md">
-                  {project.fullDescription}
+                <p class="text-foreground leading-relaxed text-md" set:html={project.fullDescription}>
                 </p>
               </div>
               <!-- Project External Link (if exists) -->
@@ -276,47 +274,46 @@ if (!project) {
   </style>
   
   <script>
-    // 이전 버튼 클릭 시 네비게이션 처리
-    document.addEventListener('DOMContentLoaded', function() {
-      const backButton = document.getElementById('backButton');
-      if (backButton) {
-        backButton.addEventListener('click', function() {
-          // 브라우저 히스토리에 이전 페이지가 있으면 뒤로가기
-          if (document.referrer && document.referrer.includes(window.location.origin)) {
-            window.history.back();
-          } else {
-            // 이전 페이지가 없으면 프로젝트 섹션으로 이동
-            window.location.href = '/#projects';
+    // 이전 버튼 클릭 시 네비게이션 처리 함수
+    function handleBackClick() {
+      console.log('Back button clicked'); // 디버깅용
+      // 브라우저 히스토리에 이전 페이지가 있으면 뒤로가기
+      if (document.referrer && document.referrer.includes(window.location.origin)) {
+        window.history.back();
+      } else {
+        // 이전 페이지가 없으면 프로젝트 섹션으로 이동
+        window.location.href = '/#projects';
+      }
+    }
+    
+    // 모바일 Chrome에서 주소창 하단 위치 시 스크롤 문제 해결
+    function handleMobileChromeScroll() {
+      const isMobile = window.innerWidth <= 768;
+      const isChrome = navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Edg');
+      
+      if (isMobile && isChrome) {
+        // 모바일 Chrome에서만 적용
+        document.documentElement.style.overflowX = 'hidden';
+        document.body.style.overflowX = 'hidden';
+        
+        // 주소창 상태 변화 감지
+        let initialViewportHeight = window.innerHeight;
+        
+        window.addEventListener('resize', function() {
+          const currentViewportHeight = window.innerHeight;
+          // 주소창이 나타나거나 사라질 때 (뷰포트 높이가 변할 때)
+          if (Math.abs(currentViewportHeight - initialViewportHeight) > 50) {
+            // 스크롤 위치 조정
+            setTimeout(() => {
+              window.scrollTo(0, window.scrollY);
+            }, 100);
           }
         });
       }
-      
-      // 모바일 Chrome에서 주소창 하단 위치 시 스크롤 문제 해결
-      function handleMobileChromeScroll() {
-        const isMobile = window.innerWidth <= 768;
-        const isChrome = navigator.userAgent.includes('Chrome') && !navigator.userAgent.includes('Edg');
-        
-        if (isMobile && isChrome) {
-          // 모바일 Chrome에서만 적용
-          document.documentElement.style.overflowX = 'hidden';
-          document.body.style.overflowX = 'hidden';
-          
-          // 주소창 상태 변화 감지
-          let initialViewportHeight = window.innerHeight;
-          
-          window.addEventListener('resize', function() {
-            const currentViewportHeight = window.innerHeight;
-            // 주소창이 나타나거나 사라질 때 (뷰포트 높이가 변할 때)
-            if (Math.abs(currentViewportHeight - initialViewportHeight) > 50) {
-              // 스크롤 위치 조정
-              setTimeout(() => {
-                window.scrollTo(0, window.scrollY);
-              }, 100);
-            }
-          });
-        }
-      }
-      
+    }
+    
+    // 페이지 로드 시 모바일 스크롤 처리
+    document.addEventListener('DOMContentLoaded', function() {
       handleMobileChromeScroll();
     });
   </script>

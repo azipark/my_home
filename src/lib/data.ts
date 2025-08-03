@@ -213,7 +213,7 @@ export const projects = [
     slug: "portfolio",
     image: "/images/projects_01.png",
     technologies: "Astro | React | TypeScript | Tailwind CSS",
-    fullDescription: "개인 포트폴리오 웹사이트로, Astro 프레임워크를 기반으로 React와 TypeScript를 활용하여 구축했습니다. Tailwind CSS를 사용하여 모던하고 반응형인 디자인을 구현했으며, Vercel을 통해 배포했습니다.",
+    fullDescription: "개인 포트폴리오 웹사이트로, <strong>Astro 프레임워크를 기반으로 React와 TypeScript를 활용</strong>하여 구축했습니다. <strong>Tailwind CSS를 사용해 모던하고 반응형인 디자인을 구현</strong>했으며, <strong>Vercel을 통해 배포</strong>했습니다.",
     description: [
       "· Framework: Astro",
       "· Front-end: React, TypeScript",
@@ -234,7 +234,7 @@ export const projects = [
     image: "/images/projects_05.mp4",
     poster: "/images/projects_04.png",
     technologies: "VueJS | SCSS/SASS",
-    fullDescription: "한도조회 결과 화면은 사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용했습니다. 각 UI 요소는 등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도할 수 있도록 구현했습니다. 특히 결과 정보의 전환 효과 등을 통해 정보에 대한 몰입감을 높이고, 이후 '대출 신청' 등 후속 행동을 유도하는 흐름을 강화했습니다.",
+    fullDescription: "한도조회 결과 화면은 <strong>사용자의 시선을 집중시키고 정보 전달력을 높이기 위해 다양한 애니메이션 효과를 적용</strong>했습니다. 각 UI 요소는 <strong>등장 순서와 타이밍을 조절해 자연스럽게 사용자 눈길을 유도</strong>할 수 있도록 구현했습니다. 특히 <strong>결과 정보의 전환 효과</strong> 등을 통해 정보에 대한 몰입감을 높이고, 이후 <strong>'대출 신청' 등 후속 행동을 유도하는 흐름을 강화</strong>했습니다.",
     description: [
       "· Front-end: VueJS",
       "· Styling: SCSS/SASS",
@@ -259,7 +259,7 @@ export const projects = [
     year: "2023",
     slug: "oneuniverse-admin",
     technologies: "HTML | JavaScript | jQuery | CSS | Chart.js",
-    fullDescription: "웹 기반 게임 관리자(Admin) 페이지 구축 프로젝트에 프리랜서로 단독 참여하여, 전체 화면의 퍼블리싱과 UI 흐름 구현을 전담하였습니다.\n\n기획자와 직접 커뮤니케이션하며 요구사항을 정리하고, 프론트엔드 전담 인력으로서 개발자와 함께 기술 스택(프레임워크·툴 등)을 논의하고 선정하는 등 초기 구조 설계부터 마무리까지 주도적으로 참여했습니다.\n요구사항 변경에 유연하게 대응하며 관리자용 인터페이스에 적합한 직관적인 UI/UX 구조 설계와 퍼블리싱 품질 확보에 집중하였습니다.",
+    fullDescription: "웹 기반 게임 관리자(Admin) 페이지 구축 프로젝트에 <strong>프리랜서로 단독 참여</strong>하여, 전체 화면의 <strong>퍼블리싱과 UI 흐름 구현을 전담</strong>하였습니다. 기획자와 직접 커뮤니케이션하며 요구사항을 정리하고, 프론트엔드 전담 인력으로서 개발자와 함께 <strong>기술 스택(프레임워크·툴 등)을 논의하고 선정</strong>하는 등 초기 구조 설계부터 마무리까지 주도적으로 참여했습니다. 요구사항 변경에 유연하게 대응하며 관리자용 인터페이스에 적합한 <strong>직관적인 UI/UX 구조 설계</strong>와 퍼블리싱 품질 확보에 집중하였습니다.",
     description: [
       "· Front-end: HTML, JavaScript, jQuery",
       "· Styling: CSS",
@@ -294,7 +294,7 @@ export const projects = [
     image: "/images/projects_10.png",
     poster: "/images/projects_09.png",
     technologies: "HTML | JavaScript | jQuery | CSS",
-    fullDescription: "동남아시아 시장을 타겟으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다.\n\n영어, 중국어, 인도네시아어, 대만어 등 다국어 지원 및 현지화 작업을 통해 글로벌 사용자에게 최적화된 UX를 제공하였습니다. 또한 외주 개발사와 협업하며 기획, 디자인, 개발, 마케팅팀과의 전방위 커뮤니케이션을 직접 주도하였고, 다양한 부서 간 요구사항을 조율하며 일정 관리와 품질 유지에 적극 기여했습니다.",
+    fullDescription: "<strong>동남아시아 시장을 타겟</strong>으로 한 게임 서비스의 PC 및 모바일 홈페이지를 구축했습니다. 영어, 중국어, 인도네시아어, 대만어 등 <strong>다국어 지원 및 현지화 작업</strong>을 통해 글로벌 사용자에게 최적화된 UX를 제공하였습니다. 또한 외주 개발사와 협업하며 <strong>기획, 디자인, 개발, 마케팅팀과의 전방위 커뮤니케이션을 직접 주도</strong>하였고, 다양한 부서 간 요구사항을 조율하며 <strong>일정 관리와 품질 유지에 적극 기여</strong>했습니다.",
     description: [
       "· Front-end: HTML, Javascript, jQuery",
       "· Styling : CSS",
